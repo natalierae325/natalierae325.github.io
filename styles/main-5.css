@@ -1,0 +1,84 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+  font-size: 16px;
+    font-family: Trebuchet MS;
+  /* Declare the base font-family - from google font api or other */
+}
+
+header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
+  /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+}
+
+header {}
+header h1 {}
+header img {}
+header .subheading {
+    font-family: Georgia ;
+}
+
+
+nav {
+}
+nav button {}
+nav ul {
+    top: 0;
+    width:100%;
+    margin:0px 0px;
+    
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+nav ul li {
+    display:block;
+    display:inline-block;
+    font-size: 30px;
+    padding:5px 20px; 
+    margin-left:62px
+}
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding 14px 16px;
+    text-decoration: none;
+}
+nav ul li.active a {
+    background-color: #4CAF50;
+}
+nav ul li a:hover {
+    background-color: #111;
+}
+
+main {}
+main h2 {
+    margin-left: 75px;
+}
+main figure { margin: 0 0 .2rem 2%; width:96%; }
+main figure img { 
+    width: 30%; 
+    margin-left: 25vw;
+}
+
+section {
+    border-style: double;
+    border-color: dimgrey;
+    margin-left: 62px;
+    padding 20px 20px;
+    display:inline-block;
+    
+}
+
+article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+  width: 200px; /* fill the page in the small/phone view */
+  margin: 200px;
+}
+
+footer {}
+footer aside {}
+footer>p {} /* This structure refers to p elements that are direct children of the footer element */
+
+/* Other Class Selectors */
