@@ -9,14 +9,20 @@ body {
 }
 
 header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
-  /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+  /* Declare the maximum width   and other main element rules to limit the stretch on wide views */
+    max-width: auto;
+    max-height: inherit;
 }
 
-header {}
-header h1 {}
+header {
+    font-family: sans typewriter;
+}
+header h1 {
+    font-family: verdana;
+}
 header img {}
 header .subheading {
-    font-family: Georgia ;
+    font-family: Georgia;
 }
 
 
@@ -47,10 +53,11 @@ nav ul li a {
     text-decoration: none;
 }
 nav ul li.active a {
-    background-color: #4CAF50;
+    background-color:;
 }
 nav ul li a:hover {
-    background-color: #111;
+    background-color: #00FFFF;
+    text-emphasis-style: dot;
 }
 
 main {}
@@ -59,15 +66,15 @@ main h2 {
 }
 main figure { margin: 0 0 .2rem 2%; width:96%; }
 main figure img { 
-    width: 30%; 
-    margin-left: 25vw;
+    width: 45%; 
+    margin-left: 30vw;
 }
 
 section {
     border-style: double;
     border-color: dimgrey;
-    margin-left: 62px;
-    padding 20px 20px;
+    margin-left: 42px;
+    padding 200px 200px;
     display:inline-block;
     
 }
