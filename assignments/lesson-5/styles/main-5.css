@@ -47,7 +47,6 @@ nav ul {
     top: 0;
     width:100%;
     margin:0px 0px;
-    
     padding: 0;
     overflow: hidden;
     background-color: #333;
@@ -64,7 +63,7 @@ nav ul li a {
     color: white;
     text-align: center;
     padding: 2px 2px;
-    text-decoration: none;
+    text-decoration: inherit;
 }
 nav ul li.active a {
     
@@ -111,6 +110,7 @@ section {
     float: left;
     width: auto;
     margin: auto;
+    
      
 }
 article p.town-article {
