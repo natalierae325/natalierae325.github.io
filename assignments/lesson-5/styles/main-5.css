@@ -1,145 +1,129 @@
-/* This main css file contains the default rules and is geared toward the small/phone view */
-
 * { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
 
 body {
   font-size: 16px;
-    font-family: Trebuchet MS;
+  font-family: Trebuchet MS, sans-serif;
+    margin: 0 auto;
+    width: 100%;
   /* Declare the base font-family - from google font api or other */
 }
 
 header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
   /* Declare the maximum width   and other main element rules to limit the stretch on wide views */
-    max-width: 960px;
+   width: 100%;
     margin: 0 auto;
 }
 
 header {
-    font-family: Trebuchet MS;
     color: #333;
     background-color: #ff944d;
+    overflow:auto;
+    margin: 0 auto;
+    width: 100%;
+    
 }
 header h1 {
-    font-family: Trebuchet MS;
-    font-size: 250%;
-    float: right;
-    margin-right: 30%;
+    font-size: .75rem;
+
 }
 header img {
     border: none;
-    
+    float:left;
+    margin-right: 15px;
+    padding: 8px;
 }
-header .subheading {
-    font-family: Trebuchet MS;
-    font-size: 150%;
-    float: right;
-    margin-right: 30%; 
+ header .subheading {
+    font-family: Trebuchet MS;    font-size: .65rem;
 }
-
 
 nav {
-   display: 100%;
+   clear: both;
+   width: 100%
 }
 nav button {
-    display: flex;
+   position: absolute;
+   top: 10px;
+   right: 10px;
+    padding: 10px;
 }
 nav ul {
-    top: 0;
     width:100%;
-    margin:0px 0px;
+    margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #333;
 }
 nav ul li {
-    display:block;
-    display:inline-block;
-    font-size: 25px;
+    font-size:1rem;
     padding:2px 16px; 
-    margin-left:62px
 }
 nav ul li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 2px 2px;
+    padding: 2px;
     text-decoration: inherit;
 }
-nav ul li.active a {
-    
-}
+
 nav ul li a:hover {
     background-color: darkgrey;
     text-emphasis-style: dot;
 }
 
 main {
-    margin: none;
+    margin: 5px;
     
 }
 main h2 {
-    display: inline-block;
     margin-left: 5%;
-    margin align-content: auto;
-    font-size: 30px;
+    font-size: 1.2rem;
     font-family: monospace;
     letter-spacing: 1px;
-    line-height: 3px;
+    text-align: center;
 }
 main figure { margin: 0 0 .2rem 2%; width:96%; }
 main figure img { 
-    width: auto; 
-    height: 85%;
-    margin-left: 50px;
+    width: 100%; 
+    height: auto;
+}
+main > section { 
 }
 
-section {
-    border-style: solid;
-    border-color: dimgrey;
-    margin-left: 5px;
-    padding 200px 200px;
-    float: left;
-    display:inline-block;
-    clear:left;
-    white-space: nowrap;
-    
-}
 .forecast {
     display: none;
     border-bottom-style: solid;
-    float: left;
+    border-top-style: solid;
     width: auto;
     margin: auto;
+    clear: both;
+    text-align: center;
     
      
 }
+.box {
+    width: 300px;
+    height: 100px;
+    margin: 1em;
+    text-align: center;
+}
+
 article p.town-article {
-    overflow: auto;
-    min-height: 350px;
-    margin-top: 25%;
+
+
 }
 main h3 {
-    display: inline-block;
-    margin-right: 55px;
-    font-size-adjust: 50%;
-   
+ 
 }
-
-article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
-  width: 100%; /* fill the page in the small/phone view */
+article p.town-article img {
+  width: 100%; 
   height: auto;
-}
-
+} 
 footer {
     background-color: #ff944d;
     padding-top: 3px;
     padding-bottom: 3px;
+    font-size: .5rem;
 }
-
 footer>p {
-    margin-right: 20%;
-    margin-left:20%;
    color:#333;
-} /* This structure refers to p elements that are direct children of the footer element */
-
-/* Other Class Selectors */
+} 
