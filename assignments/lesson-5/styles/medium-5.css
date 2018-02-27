@@ -1,6 +1,8 @@
-@media only screen and (min-width: 37.5em) {
+@media only screen and (min-width: 375em) {
   /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
     header h1 {
+    font-size: ;
+        
         
     }
     
@@ -11,13 +13,22 @@
     main h2 {font-size:1.8rem;}
     
     main figure img {
-        float:left;
-        width:50%;
-        margin:5px;
+        float: left;
+        width:100%;
+        margin:10px;
+        text-align: center;
     }
   
   section.forecast { display: block;}  /* show the 10-day forecast with the medium view and up */
   
-  article p.town-article img { width: 62.666%; height:auto; float:right; }  /* responsive images */
-
+  article p.town-article img { 
+      width: 62.666%;
+      height:auto;
+      float:right; 
+    }  /* responsive images */
+    .img {
+        background-image: url("images/franklin-medium.jpeg");
+        width: 15em;
+        height: 100%;
+    }
 }

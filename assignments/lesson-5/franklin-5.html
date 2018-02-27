@@ -16,7 +16,7 @@
 <body>
 
   <header>
-    <img src="images/chance-of-storm.png" alt="Weather ON Demand" height="75px" width="75px"> img
+        <img src="images/chance-of-storm.png" alt="Weather ON Demand" height="150px" width="150px"> 
     <h1>Weather ON Demand</h1>
     <div class="subheading">Your Weather, Right Here Right Now</div>
   </header>
@@ -47,7 +47,7 @@
         <p>Low:48&deg;F</p>  
       </div>
       <div class="current">
-          <p>Sunny&#9788 </p>
+          <p>Sunny &#9788</p>
       </div>   
       <div class="conditions">
         <p>Precipitation: 50%</p>  
@@ -94,6 +94,11 @@
     <section>
       <h3>Franklin Breaks Record</h3>
       <article class="town-article">
+          <picture>
+              <img srcset="images/franklin-small.jpeg" media="(min-width: 375px)"alt="small"> 
+              <img srcset="images/franklin-medium.jpeg" media="(min-width: 768px)" alt="small">
+              <img srcset="images/franklin-large.jpeg" media="(min-width: 1048)" alt="large">
+          </picture>
         <img src="images/franklinTown.jpeg" alt="Franklin Town Main Article">       
           <p>Franklin Town enjoys a tropical marine climate with only mild temperature fluctuations over the course of the year. Summers (May to October) are warm and humid with frequent thunderstorms, while winters (November to April are cool and farily dry).  </p>
       </article>
@@ -101,11 +106,13 @@
   </main>
     
   <footer>
-    <p class="footer-bar">&copy;2017 All Rights Reserved | Site Title | <span id="currentdate">Current Date Placeholder</span></p>
+    <p class="footer-bar">&copy;2017 All Rights Reserved | Site Title | <span id="currentdate.js">Current Date Placeholder</span></p> 
+      <script src="scripts/currentdate.js"></script>
   </footer>
+   
 
-  <script src="scripts/hamburger.js"></script>
-  <script src="scripts/currentdate.js"></script>
+  <script src="scripts/hamburger.js"></script>  
+    
 
 </body>
 </html>

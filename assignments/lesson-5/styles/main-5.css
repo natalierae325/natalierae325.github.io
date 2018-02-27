@@ -23,7 +23,8 @@ header {
     
 }
 header h1 {
-    font-size: .75rem;
+    font-size: 3rem;
+    text-align: center;
 
 }
 header img {
@@ -31,31 +32,36 @@ header img {
     float:left;
     margin-right: 15px;
     padding: 8px;
+    
 }
  header .subheading {
-    font-family: Trebuchet MS;    font-size: .65rem;
+    font-family: Trebuchet MS; 
+     font-size: 1.5rem;
+     padding-bottom: 3px;
+     text-align: center;
 }
 
 nav {
    clear: both;
-   width: 100%
+   width: 100%;
 }
 nav button {
    position: absolute;
    top: 10px;
    right: 10px;
-    padding: 10px;
+padding: 10px;
 }
 nav ul {
     width:100%;
-    margin: 0;
-    padding: 0;
+    margin: auto;
+    padding: 2px;
     overflow: hidden;
     background-color: #333;
 }
 nav ul li {
-    font-size:1rem;
-    padding:2px 16px; 
+    font-size:2rem;
+    padding:2px 16px;
+    
 }
 nav ul li a {
     display: block;
@@ -77,8 +83,6 @@ main {
 main h2 {
     margin-left: 5%;
     font-size: 1.2rem;
-    font-family: monospace;
-    letter-spacing: 1px;
     text-align: center;
 }
 main figure { margin: 0 0 .2rem 2%; width:96%; }
@@ -87,6 +91,7 @@ main figure img {
     height: auto;
 }
 main > section { 
+    text-align: center;
 }
 
 .forecast {
@@ -111,18 +116,34 @@ article p.town-article {
 
 
 }
-main h3 {
- 
-}
 article p.town-article img {
   width: 100%; 
   height: auto;
 } 
+.img {
+    background-image: url(images/franklin-small.jpeg);
+    }
+@media (min-width: 768px) {
+    .img {
+        background-image: url(images/franklin-medium.jpeg);
+    }
+@media (min-width: 1040px) {
+    .img {
+            background-image: url(images/franklin-original.jpeg);
+        }
+    }
+}
+}
+}
 footer {
     background-color: #ff944d;
     padding-top: 3px;
     padding-bottom: 3px;
     font-size: .5rem;
+}
+footer>section {
+    font-size: .5rem;
+    
 }
 footer>p {
    color:#333;
