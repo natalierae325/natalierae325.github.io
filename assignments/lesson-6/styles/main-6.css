@@ -1,0 +1,105 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+  font-size: 16px;
+    font-family: Trebuchet MS;
+  /* Declare the base font-family - from google font api or other */
+}
+
+header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
+  /* Declare the maximum width   and other main element rules to limit the stretch on wide views */
+    max-width: auto;
+    max-height: inherit;
+}
+
+header {
+    font-family: sans typewriter;
+}
+header h1 {
+    font-family: verdana;
+}
+header img {}
+header .subheading {
+    font-family: Georgia;
+}
+
+
+nav {
+}
+nav button {}
+nav ul {
+    top: 0;
+    width:100%;
+    margin:0px 0px;
+    
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+nav ul li {
+    display: inline-flex;
+    font-size: 30px;
+    padding:5px 20px; 
+    margin-left:62px
+}
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding 14px 16px;
+    text-decoration: none;
+}
+nav ul li.active a {
+    background-color:;
+}
+nav ul li a:hover {
+    background-color: #00FFFF;
+    text-emphasis-style: dot;
+}
+
+main {}
+main h2 {
+    margin-left: 75px;
+}
+main figure { margin: 0 0 .2rem 2%; width:96%; }
+main figure img { 
+    width: 45%; 
+    margin-left: 30vw;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: .25rem;
+}
+
+.grid-item {
+    margin: 5px;
+    border: 1px solid #ddd;
+    padding: 3px;
+}
+
+.grid-item img {
+    width: 96%;
+    height: auto;
+}
+
+section {
+    border-style: double;
+    border-color: dimgrey;
+    margin-left: 42px;
+    padding 200px 200px;
+    display:inline-block;
+    
+}
+
+article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+  width: 200px; /* fill the page in the small/phone view */
+  margin: 200px;
+}
+
+footer {}
+footer aside {}
+footer>p {}

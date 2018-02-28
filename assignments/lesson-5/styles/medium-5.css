@@ -7,7 +7,7 @@
     }
     
     
-  nav button { display:none; }  /* hamburger button does not need to be shown */
+  nav button { display:flex; }  /* hamburger button does not need to be shown */
     nav ul li {display:inline-block;}
     
     main h2 {font-size:1.8rem;}
