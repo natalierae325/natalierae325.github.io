@@ -1,15 +1,13 @@
-* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+* { box-sizing: border-box;}  
 
 body {
   font-size: 16px;
   font-family: Trebuchet MS, sans-serif;
     margin: 0 auto;
     width: 100%;
-  /* Declare the base font-family - from google font api or other */
 }
 
-header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
-  /* Declare the maximum width   and other main element rules to limit the stretch on wide views */
+header, nav, main, footer { 
    width: 100%;
     margin: 0 auto;
 }
@@ -31,7 +29,7 @@ header img {
     border: none;
     float:left;
     margin-right: 15px;
-    padding: 8px;
+    padding: 75px;
     
 }
  header .subheading {
@@ -49,7 +47,7 @@ nav button {
    position: absolute;
    top: 10px;
    right: 10px;
-padding: 10px;
+   padding: 10px;
 }
 nav ul {
     width:100%;
@@ -67,7 +65,7 @@ nav ul li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 2px;
+    padding: 2px 4px;
     text-decoration: inherit;
 }
 
@@ -85,7 +83,9 @@ main h2 {
     font-size: 1.2rem;
     text-align: center;
 }
-main figure { margin: 0 0 .2rem 2%; width:96%; }
+main figure { margin: 0 0 .2rem 2%;
+    width:96%; 
+}
 main figure img { 
     width: 100%; 
     height: auto;
@@ -112,13 +112,11 @@ main > section {
     text-align: center;
 }
 
-article p.town-article {
 
-
-}
 article p.town-article img {
   width: 100%; 
   height: auto;
+  margin: 200px;
 } 
 .img {
     background-image: url(images/franklin-small.jpeg);
@@ -133,8 +131,7 @@ article p.town-article img {
         }
     }
 }
-}
-}
+
 footer {
     background-color: #ff944d;
     padding-top: 3px;

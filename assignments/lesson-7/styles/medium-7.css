@@ -1,13 +1,60 @@
-@media only screen and (min-width: 37.5em) {
+@media only screen and (min-width: 375em) {
+    header, nav, main, footer {
+        max-width: 960px;
+        margin: 0 auto;
+    }
+        
+    }
+  nav button { 
+      display:flex;
+}  
+    nav ul li {
+        display:inline-block;
+}
+    
+    main h2 {
+        font-size:1.8rem;
+}
+    
+    main figure img {
+        float: left;
+        width:100%;
+        margin:10px;
+        text-align: center;
+    }
+  
+  section.forecast { 
+      display: block;
+}  
+  
+  article p.town-article img { 
+      width: 62.666%;
+      height:auto;
+      float:right; 
+    }  
+    /*.img {
+        background-image: url("images/franklin-medium.jpeg");
+        width: 15em;
+        height: 100%;
+    }
+}
+*/
+/*@media only screen and (min-width: 37.5em) {
     header, nav, main, footer {
         max-width: 960px;
         margin: 0 auto;
     }
     
-  nav button { display:flex; }  /* hamburger button does not need to be shown */
-    nav ul li { display: inline-block;}
+  nav button { 
+      display:flex;
+    }  
+    nav ul li { 
+        display: inline-block;
+    }
 
-    main h2 {font-size: 1.8rem;}
+    main h2 {
+        font-size: 1.8rem;
+    }
     
     main figure img {
         float: left;
@@ -16,16 +63,15 @@
         text-align: center;
     }
     
-      section.forecast { display: block; }  /* show the 10-day forecast with the medium view and up */
+      section.forecast {
+          display: block; 
+    }  
   
   article p.town-article img { 
       width: 62.666%;
       height:auto;
       float:right;
-    }  /* responsive images */
-
-  .container {
-    grid-template-columns: 1fr 1fr;
+    }  
    }
-}
 
+*/

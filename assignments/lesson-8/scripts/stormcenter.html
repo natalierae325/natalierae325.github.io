@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Weather On Demand | Franklin Town Page | Accurate Weather</title>
+  <meta name="Weather site with On Demand forecasts and more." content="The Franklin weather site gives you the fastes forecasts and the most accurate information about your home town.">    
+  <link href="../../styles/normalize.css" rel="stylesheet"> 
+  <link href="/styles/main-5.css" rel="stylesheet">    
+  <link href="styles/medium-8.css" rel="stylesheet">  
+  <link href="styles/large-8.css" rel="stylesheet">   
+</head>
+<body>
+
+  <header>
+    <img src="/assignments/lesson-5/images/chance-of-storm.png" alt="Weather ON Demand" height="75px" width>
+    <h1>Weather ON Demand</h1>
+    <div class="subheading">Your Weather, Right Here Right Now</div>
+  </header>
+  <nav>
+    <button onclick="toggleNavMenu()">&#9776;</button>
+    <ul>
+    	<li><a href="#">Home</a></li>
+    	<li class="active"><a href="franklin-7.html">Franklin</a></li>
+    	<li><a href="#">Greenville</a></li>
+    	<li><a href="#">Springfield</a></li>
+    	<li class="active"><a href="stormcenter.html">Storm Center</a></li>
+    	<li class="active"><a href="gallery-7.html">Gallery</a></li>
+        </ul>		
+  </nav>
+    
+  <main>
+    <h2>Storm Center</h2>
+<form>
+  Enter full name:<br>
+  <input type="text" name="firstname" pattern="[A-Z]{5,}" alt="Alpha letters, minimum of 5 charactars required." required><br>
+  E-mail:<br>
+  <input type="email" name="email">
+</form>
+      
+    </main>
+    
+  <footer>
+    <p class="footer-bar">&copy;2017 All Rights Reserved | Site Title | <span id="currentdate">Current Date Placeholder</span></p>
+
+
+  <script src="scripts/hamburger.js"></script>
+  <script src="scripts/currentdate.js"></script>    
+  
+    </footer>
+
+</body>
+</html>

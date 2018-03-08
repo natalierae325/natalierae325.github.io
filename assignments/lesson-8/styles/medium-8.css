@@ -4,10 +4,16 @@
         margin: 0 auto;
     }
     
-  nav button { display:none; }  /* hamburger button does not need to be shown */
-    nav ul li { display: inline-block;}
+  nav button { 
+      display:flex;
+    }  
+    nav ul li { 
+        display: inline-block;
+    }
 
-    main h2 {font-size: 1.8rem;}
+    main h2 {
+        font-size: 1.8rem;
+    }
     
     main figure img {
         float: left;
@@ -16,19 +22,14 @@
         text-align: center;
     }
     
-     section.forecast {
+      section.forecast {
           display: block; 
-          margin: 0 auto;
-    }  /* show the 10-day forecast with the medium view and up */
+    }  
   
   article p.town-article img { 
       width: 62.666%;
       height:auto;
       float:right;
-      
-    }  /* responsive images */
-
-  .container {
-    grid-template-columns: 1fr 1fr;
+    }  
    }
-}
+

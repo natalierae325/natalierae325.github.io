@@ -1,17 +1,16 @@
 @media only screen and (min-width: 64em) {
   /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
   
-    }
   article p.town-article img {
       width: auto;
       height: 100%;
     }
     
         nav button {
-          display:inline-block; 
+          display:inherit; 
     }  
     nav ul li {
-        display:inline-flex;
+        display:inline-block;
     }
     
     main h2 {
@@ -19,8 +18,9 @@
     }
     
     main figure img {
+        float: right;
         width:55%;
-        margin:75px;
+        margin:200px;
         text-align: center;
     }
   
