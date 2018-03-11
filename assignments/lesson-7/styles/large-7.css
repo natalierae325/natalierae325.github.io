@@ -1,4 +1,4 @@
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 900px) {
   /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
   
     }
@@ -8,10 +8,12 @@
     }
     
         nav button {
-          display:inline-block; 
+          display:inline-flex; 
     }  
     nav ul li {
-        display:inline-flex;
+        display:inline-block;
+        margin: 0 auto;
+        padding: 35px;
     }
     
     main h2 {

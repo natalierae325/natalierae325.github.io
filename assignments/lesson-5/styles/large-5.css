@@ -16,21 +16,17 @@
     main figure img {
         float: right;
         width:55%;
-        margin:200px;
         text-align: center;
     }
   
   section.forecast {
       display: block;
+      text-align: center;
+      padding: 10px;
     }  /* show the 10-day forecast with the medium view and up */
   
   article p.town-article img { 
       width: 55%;
-      height:auto;
-      float:right; 
+      height:auto; 
     }  
-    .img {
-        background-image: url("images/franklin-original.jpeg");
-        width: 15em;
-        height: 100%;
 }

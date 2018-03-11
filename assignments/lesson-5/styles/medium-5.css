@@ -24,7 +24,8 @@
     }
   
   section.forecast { 
-      display: block;
+      display: block;    
+     
 }  
   
   article p.town-article img { 

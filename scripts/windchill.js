@@ -1,6 +1,11 @@
-function windchill(temp, speed) {
-var temp = t;
-var speed = s;
-var fahrenheit = 35.74 + 0.6215 * t - 35.75 (math.pow(s, 0.16)) + 0.4275 * t (math.pow(s, 0.16));
-return windchill;
-}
+var high = parseFloat(document.getElementById('highT').innerHTML); 
+
+var low = parseFloat(document.getElementById('lowT').innerHTML); 
+
+var s = parseFloat(document.getElementById('windS').innerHTML);
+   
+var t = (high + low) / 2; 
+    
+var f = Math.round(35.74 + 0.6215 * t - 35.75 * Math.pow(s, 0.16) + 0.4275 * t * Math.pow(s, 0.16));  
+   
+document.getElementById("output").innerHTML = f; 
