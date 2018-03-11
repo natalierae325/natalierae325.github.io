@@ -40,6 +40,18 @@ header .subheading {
     text-align: center;
     
 }
+
+
+
+
+
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+}
+
 nav {
     clear: both;
     width: 100%;
@@ -78,6 +90,7 @@ nav ul li a:hover {
     background-color: darkgray;
   
 }
+
 main h2 {
     margin-left: 75px;
 }
