@@ -46,8 +46,8 @@ header .subheading {
      text-align: center;
 
 }
-    .hamburger { 
-    display: inline-flex;
+    hamburger { 
+    display: inline;
     position: absolute;
     top: 2px;
     left: 2px;
@@ -142,34 +142,15 @@ main > section {
     height: auto;
 }
 
-section {
-    border-style: double;
-    border-color: dimgrey;
-    margin-left: 42px;
-    padding 200px 200px;
-    display:inline-block;
-    
+    section  {
+    padding: 0;
+        
 }
-
-article p.town-article img {  
+    article p.town-article img {  
   width: auto;
     height: 100%;
   margin: 200px;
 }
-.img {
-    background-image: url(images/franklin-small.jpeg);
-    }
-@media (min-width: 768px) {
-    .img {
-        background-image: url(images/franklin-medium.jpeg);
-    }
-@media (min-width: 1040px) {
-    .img {
-            background-image: url(images/franklin-original.jpeg);
-        }
-    }
-}
-
 
 footer {
     background-color: #ff944d;

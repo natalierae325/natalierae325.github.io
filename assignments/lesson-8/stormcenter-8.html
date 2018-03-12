@@ -32,16 +32,62 @@
   <main>
     <h2>Storm Center</h2>
 <form>
-  Enter full name:<br>
+Enter full name:<br>
   <input type="text" name="firstname" pattern="[A-Z]{5,}" alt="Alpha letters, minimum of 5 charactars required." required><br>
-  E-mail:<br>
-  <input type="email" name="email">
+E-mail:<br>
+  <input type="email" name="email" placeholder="example@gmail.com">  
 </form>
-      
+<form>
+Phone Number:
+  <input type="tel" name="phoneNumber" required>
+</form>
+  <form>
+Zipcode:
+  <input type="number" name="zipcode" min="5" placeholder="XXXXX" required>
+</form>
+      <form>
+Storm Date:
+  <input type="date" name="stormDate">
+</form>     
+Storm Type:
+ <input list="storm type">
+<datalist id="storm type">
+  <option value="Flash Flood">
+  <option value="Hail">
+  <option value="Hurricane">
+  <option value="Thunderstorm">
+  <option value="Tornado">
+</datalist>
+ <form onsubmit="return false" oninput="level.value = flevel.valueAsNumber">
+  <label for="flying">Storm Severity</label>
+  <input name="severity" id="stormseverity" type="range" min="1" max="10" value="1"> 
+  <output for="stormseverity" name="level">1</output>/10
+</form>
+      Storm Region
+    <select name="regions">
+  <option value="select" disabled>Select Region...</option>
+  <option value="franklin">Franklin</option>
+  <option value="springfield">Springfield</option>
+  <option value="greenville">Greenville</option>
+</select>
+     <form>
+         User In-Danger Level
+  <br> 
+  <input type="radio" name="dangerlevel" value="yes" checked> Yes<br>
+  <input type="radio" name="dangerlevel" value="no"> No<br>
+  <input type="radio" name="dangerlevel" value="maybe"> Maybe
+</form>
+    Place additional information or comments below.
+      <br>
+<textarea name="message" rows="5" cols="80">
+</textarea>
+<form action="/action_page.php">
+  <input type="submit" value="Submit Storm Report">
+</form>
     </main>
-    
+
   <footer>
-    <p class="footer-bar">&copy;2017 All Rights Reserved | Weather On Demand | <span id="currentdate.js">Current Date Placeholder</span></p>
+    <p class="footer-bar">&copy;2017 All Rights Reserved | Weather On Demand | <span id="currentdate"></span></p>
     
   
     </footer>
