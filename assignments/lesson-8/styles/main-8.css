@@ -1,15 +1,27 @@
 /* This main css file contains the default rules and is geared toward the small/phone view */
+/*@media only screen and (max-width: 37.5em) {
+.navigation.responsive { 
+    position: relative;
+    padding: 10px;
+}
+}
 
 * { box-sizing: border-box;}  
 
 body {
   font-size: 16px;
     font-family: Trebuchet MS; 
+     background-image: url("/images/marble1.jpg");
+    background-repeat: no-repeat;
+
+    
+    
+ 
 }
 
 header, nav, main, footer { 
-    max-width: 100&;
-    max-height: 0 auto;
+    max-width: 960px;
+
 }
 
 header {
@@ -17,7 +29,6 @@ header {
     color: #333;
     background-color: #ff944d;
     overflow: auto;
-    margin: 0 auto;
     width: 100%;
 }
 header h1 {
@@ -39,7 +50,12 @@ header .subheading {
      padding-bottom: 3px;
      text-align: center;
 }
-
+.hamburger { 
+    display: inline-flex;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+}
 
 nav {
     clear: both;
@@ -79,9 +95,144 @@ nav ul li a:hover {
     font color: white;
     text-emphasis-style: dot;
 }
+*/
+@media screen and (min-width:300px){
+    ul.topnav.responisve li.right, 
+    ul.topnav.responsive li {float: none;
+    position: relative;}
+    
+    * { box-sizing: border-box;}  
+
+body {
+  font-size: 20px;
+    font-family: Trebuchet MS, sans-serif;
+    margin: 0 auto;
+    max-width: 100%;
+   
+}
+
+header, nav, main, footer { 
+     max-width: 1100px;
+    margin: 0px auto;
+    overflow: hidden;
+    align-content: center;
+    
+}
+
+header {
+    color: #333;
+    background-color: #ff944d;
+    width: 100%; 
+    max-height:
+}
+header h1 {
+    font-size: 35px;
+    text-align: center;
+
+}
+header img {
+    border: none;
+    float: left;
+    margin-right: 5px;
+    width: 150px;
+    height: auto; 
+    
+}
+header .subheading {
+    font-family: Trebuchet MS; 
+     font-size: 20px;
+     padding-bottom: 3px;
+     text-align: center;
+
+}
+    hamburger { 
+    display: inline;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    }
+
+nav {
+    clear: both;
+    width: 100%;
+}
+nav button {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 10px;
+    clear: both;
+    float:right;
+}
+nav ul {
+    width:100%;
+    margin: auto;
+    padding: 2px;
+    overflow: hidden;
+    background-color: #333;
+}
+nav ul li {
+    display: inline-flex;
+    font-size: 25px; 
+    padding: 10px;
+}
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+nav ul li.active a {
+    background-color:none;
+}
+nav ul li a:hover {
+  background-color: dimgrey;
+}
+
+
+
+
+
+
+
+input[type=text] {
+    border: 1px solid dimgrey;
+    border-radius: 4px;
+   padding-right: 20px;
+    margin: 5px;
+}
+input[type=email] {
+    border: 1px solid dimgrey;
+    border-radius: 4px;
+    margin: 5px
+}
+input[type=tel] {
+    border: 1px solid dimgrey;
+    border-radius: 4px;
+    margin: 5px;
+}
+input[type=number] {
+    border: 1px solid dimgrey;
+    border-radius: 4px;
+    margin: 5px;
+}
+input[type=date] {
+    border: 1px solid dimgrey;
+    border-radius: 4px;
+    margin: 5px;
+}
+datalist [id=storm type] {
+    border: 1px solid dimgrey;
+    border-radius: 4px;
+    margin: 5px;
+}
 
 main h2 {
     margin-left: 75px;
+}
+form {
+ font-size:20px;
+ font-weight: 300;
 }
 main figure { margin: 0 0 .2rem 2%; 
     width:96%;

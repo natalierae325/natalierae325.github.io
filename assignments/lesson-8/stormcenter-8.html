@@ -18,54 +18,56 @@
     <div class="subheading">Your Weather, Right Here Right Now</div>
   </header>
   <nav>
-    <button onclick="toggleNavMenu()">&#9776;</button>
-    <ul>
+    <button class="hamburger" onclick="toggleNavMenu()">&#9776;</button>
+    <ul class = "navigation"> 
     	<li><a href="#">Home</a></li>
-    	<li class="active"><a href="franklin-5.html">Franklin</a></li>
+    	<li class="active"><a href="/assignments/lesson-7/franklin-7.html">Franklin</a></li>
     	<li><a href="#">Greenville</a></li>
     	<li><a href="#">Springfield</a></li>
-    	<li class="active"><a href="stormcenter.html">Storm Center</a></li>
-    	<li class="active"><a href="gallery-7.html">Gallery</a></li>
+    	<li class="active"><a href="stormcenter-8.html">Storm Center</a></li>
+    	<li class="active"><a href="/assignments/lesson-7/gallery-7.html">Gallery</a></li>
         </ul>		
   </nav>
     
-  <main>
+<main>
     <h2>Storm Center</h2>
 <form>
 Enter full name:<br>
   <input type="text" name="firstname" pattern="[A-Z]{5,}" alt="Alpha letters, minimum of 5 charactars required." required><br>
 E-mail:<br>
-  <input type="email" name="email" placeholder="example@gmail.com">  
+  <input type="email" name="email" placeholder="example@gmail.com"> 
 </form>
 <form>
 Phone Number:
   <input type="tel" name="phoneNumber" required>
 </form>
-  <form>
+<form>
 Zipcode:
   <input type="number" name="zipcode" min="5" placeholder="XXXXX" required>
 </form>
-      <form>
+<form>
 Storm Date:
   <input type="date" name="stormDate">
-</form>     
+</form> 
+
 Storm Type:
- <input list="storm type">
-<datalist id="storm type">
+ <input list="stormtype">
+<datalist id="stormtype">
   <option value="Flash Flood">
   <option value="Hail">
   <option value="Hurricane">
   <option value="Thunderstorm">
   <option value="Tornado">
-</datalist>
- <form onsubmit="return false" oninput="level.value = flevel.valueAsNumber">
-  <label for="flying">Storm Severity</label>
-  <input name="severity" id="stormseverity" type="range" min="1" max="10" value="1"> 
-  <output for="stormseverity" name="level">1</output>/10
-</form>
+    </datalist>
+    
+<form onsubmit="return false" oninput="level.value = flevel.valueAsNumber">
+  <label for="severity">Storm Severity</label>
+  <input name="stormseverity" id="severity" type="range" min="1" max="10" value="1"> 
+  <output for="severity" name="level">1</output>/10
+</form> 
       Storm Region
-    <select name="regions">
-  <option value="select" disabled>Select Region...</option>
+<select name="regions">
+  <option value="select" disabled selected>Select Region...</option>
   <option value="franklin">Franklin</option>
   <option value="springfield">Springfield</option>
   <option value="greenville">Greenville</option>
@@ -78,20 +80,21 @@ Storm Type:
   <input type="radio" name="dangerlevel" value="maybe"> Maybe
 </form>
     Place additional information or comments below.
-      <br>
+   <br>
 <textarea name="message" rows="5" cols="80">
 </textarea>
 <form action="/action_page.php">
   <input type="submit" value="Submit Storm Report">
 </form>
-    </main>
+</main>
 
   <footer>
     <p class="footer-bar">&copy;2017 All Rights Reserved | Weather On Demand | <span id="currentdate"></span></p>
+  </footer>
     
-  
-    </footer>
-<script src="scripts/hamburger.js"></script>
-  <script src="scripts/currentdate.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script src="/scripts/windchill.js"></script>
+    
 </body>
 </html>
