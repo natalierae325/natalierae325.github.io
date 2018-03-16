@@ -66,6 +66,9 @@ nav button {
     clear: both;
     float:right;
 }
+    #navBar {
+        display: none;
+    }
 nav ul {
     width:100%;
     margin: auto;
