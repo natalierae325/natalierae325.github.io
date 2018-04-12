@@ -25,7 +25,7 @@ header {
     color: #333;
     background-color: #ff944d;
     width: 100%; 
-    max-height: auto;
+    max-height:
 }
 header h1 {
     font-size: 35px;
@@ -48,7 +48,7 @@ header .subheading {
 
 }
     .hamburger { 
-    display: block;
+    display: inline;
     position: absolute;
     top: 2px;
     left: 2px;
@@ -57,43 +57,32 @@ header .subheading {
 nav {
     text-align: center;
     width: 100%;
-    display: block;
 }
 nav button {
     position: fixed;
     top: 10px;
     right: 10px;
-    padding: 0px;
+    padding: 10px;
     clear: both;
     float:right;
 }
     #navBar {
-        display: block;
+        display: none;
         padding: 0;
     }
-#b {
-    list-style-position: block;
-}
 nav ul li {
     font-size: 25px;
     background-color: #333;
-    display: block;
-    padding: 0px;
-    list-style-type: none;
 }
 nav ul li a {
     color:white;
     text-align: center;
     text-decoration: none;
     background-color: #333;
-    padding: 0px;
 }
 nav ul li.active a {
     background-color:none;
-    padding: 0px;
 }
-
-
 nav ul li a:hover {
   background-color:
 }

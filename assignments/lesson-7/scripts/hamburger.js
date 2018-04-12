@@ -1,5 +1,5 @@
 function toggleNavMenu() {
-    console.log("hi");
+   
    console.log(document.getElementById('navBar').style.display);
     
     if (document.getElementById('navBar').style.display == "none") {
